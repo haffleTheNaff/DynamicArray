@@ -9,7 +9,7 @@ For use in C and C++ Projects
 #### da_define
 - **type** : The Type of Data to be stored 
 
-	Defines a new dynamic array struct for use in the various macros. *Only needs to be done once!
+	Defines a new dynamic array struct for use in the various macros. *Only needs to be done once!*
 
 #### da_append
 - **xs** : A Dynamic Array of Type T
