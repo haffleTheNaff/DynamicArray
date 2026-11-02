@@ -4,3 +4,5 @@ main.c
 read_the_garbage
 read_the_garbage.c
 tasks.json
+.gitignore
+.vscode
