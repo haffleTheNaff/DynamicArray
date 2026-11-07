@@ -17,6 +17,11 @@ For use in C and C++ Projects
 
 	Appends a value to the end of a Dynamic Array, may trigger reallocation
 
+#### da_bounds_check
+- **xs** : A Dynamic Array of Type T
+- **x** : An Index into **xs**
+	Verifies whether the index of **x** valid into dynamic array **xs**.
+
 #### da_reserve
 - **xs** : A Dynamic Array of Type T
 - **cap_req** : The maximum amount of memory allocated, exceeding will trigger reallocation

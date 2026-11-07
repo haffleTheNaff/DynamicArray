@@ -19,6 +19,7 @@ Includes:
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <signal.h>
 
 #define a_len(xs) sizeof(xs)/sizeof(xs[0])
 
@@ -41,6 +42,11 @@ Includes:
 	xs.items[xs.count] = x;\
 	xs.count ++;\
 } while(0)
+
+//Gets a value from a specific index
+#define da_bound_check(xs,x) do {\
+	if ((x < 0) && (x >= xs.count)) {raise(SIGTRAP);}\
+}
 
 //Reserves a chunk of memory for the Dynamic Array
 #define da_reserve(xs,cap_req) scope(\
